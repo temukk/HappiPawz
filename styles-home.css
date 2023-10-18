@@ -79,7 +79,8 @@ main {
     margin: 0 auto; /* Center the element horizontally */
 }
 .poster {
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     justify-content: space-between;
 }
