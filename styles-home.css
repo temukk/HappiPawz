@@ -98,20 +98,20 @@ main div section h1 {
   border: none;
   border-radius: 20px;
   width: 420px;
-  height: 100px;
+  height: 80px;
 
 }
 .duudlaga-button a{
   text-decoration: none;
   font-size: 30px;
-  font-weight: 800; 
+  font-weight: 600; 
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
 .duudlaga-button i{
     text-decoration: none;
     font-size: 30px;
-    font-weight: 800; 
+    font-weight: 600; 
     font-family: 'Montserrat', sans-serif;
     color: white;
   }
