@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="script.js">
     <meta charset="UTF-8">
     <meta name="theme-color">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,148 +22,155 @@
 </head>
 
 <body>
+    <div class="raindrop"></div>
+    <div class="raindrop-1"></div>
+    <div class="raindrop-2"></div>
+    <div class="raindrop-3"></div>
+    <div class="raindrop-4"></div>
+    <script src="script.js"></script>
     <nav>
         <a href="index.html"> <img src="assets/logo.png" alt="Logo"></a>
-        <ul>
+        <button class="menu-button">&#9776;</button> <!-- Burger menu button -->
+        <ul class="nav-links">
             <li><a href="service.html">Үйлчилгээ</a></li>
             <li><a href="advice.html">Зөвлөмж</a></li>
             <li><a href="about">Тухай</a></li>
         </ul>
-        <button><a href="sign_in.html">Нэвтрэх</a></button>
+        <button class="signin-button"><a href="sign_in.html">Нэвтрэх</a></button>
     </nav>
+    
     <main>
+      
         <div class="poster">
             <section>
                 <h1>Бүгд хайрлагдах эрхтэй</h1>
-                <button class="duudlaga-button"><a href="duudlaga.html">ДУУДЛАГА ӨГЬЕ</button>
-                <div class="tbuttons">
-                    <button><a href="add_search_zar.html">Хайх зар оруулъя</a></button>
-                    <button><a href="add_found_zar.html">Олсон амьтны зар оруулъя</a></button>
-                    <button><a href="adopt_found_pet.html">Үрчлье</a></button>
-                </div>
+                <button class="duudlaga-button"><a href="duudlaga.html">ДУУДЛАГА ӨГЬЕ <img src="assets/duudlaga.png" alt=""></button>
+                    <div class="tbuttons">
+                        <button>
+                            <a href="add_search_zar.html">
+                                <div class="icon"><img src="assets/icons8-search-100 (2) 1.png" alt=""></div>
+                                Хайх зар оруулъя
+                            </a>
+                        </button>
+                        <button>
+                            <a href="add_found_zar.html">
+                                <div class="icon"><img src="assets/icons8-correct-192 1.png" alt=""></div>
+                                Олсон амьтны зар оруулъя
+                            </a>
+                        </button>
+                        <button>
+                            <a href="adopt_found_pet.html"> 
+                                <div class="icon"><img src="assets/icons8-heart-with-dog-paw-100 1.png" alt=""></div>
+                                Үрчлье
+                            </a>
+                        </button>
+                    </div>
+                    
             </section>
             <img src="assets/home_pic.png" alt="homedog">
         </div>
-        <div class="seaching">
-            <h2><a href="search_pet.html">ХАЙЖ БАЙНА</a></h2>
-            <section>
-                <article class="szar"><img src="assets/lpet1.png" alt="lpet1">
-                    <p>3 хоногийн өмнө
-                        <a href="info_search_pet.html">Мэдээлэл1</a>
-                        <button><img src="assets/call.png" alt="call"></button>
-                    </p>
-                </article>
-                <article class="szar"><img src="assets/lpet2.png" alt="lpet2">
-                    <p>5 хоногийн өмнө
-                        <a href="info_search_pet.html">Мэдээлэл1</a>
-                        <button><img src="assets/call.png" alt="call"></button>
-                    </p>
-                </article>
-                <article class="szar"><img src="assets/lpet3.png" alt="lpet3">
-                    <p>9 хоногийн өмнө
-                        <a href="info_search_pet.html">Мэдээлэл1</a>
-                        <button><img src="assets/call.png" alt="call"></button>
-                    </p>
-                </article>
-                <article class="szar"><img src="assets/lpet4.png" alt="lpet1">
-                    <p>3 хоногийн өмнө
-                        <a href="info_search_pet.html">Мэдээлэл1</a>
-                        <button><img src="assets/call.png" alt="call"></button>
-                    </p>
-                </article>
-                <article class="szar"><img src="assets/lpet1.png" alt="lpet1">
-                    <p>3 хоногийн өмнө
-                        <a href="info_search_pet.html">Мэдээлэл1</a>
-                        <button><img src="assets/call.png" alt="call"></button>
-                    </p>
-                </article>
-                <article class="szar"><img src="assets/lpet2.png" alt="lpet2">
-                    <p>5 хоногийн өмнө
-                        <a href="info_search_pet.html">Мэдээлэл1</a>
-                        <button><img src="assets/call.png" alt="call"></button>
-                    </p>
-                </article class="szar">
-                <article><img src="assets/lpet3.png" alt="lpet3">
-                    <p>9 хоногийн өмнө
-                        <a href="info_search_pet.html">Мэдээлэл1</a>
-                        <button><img src="assets/call.png" alt="call"></button>
-                    </p>
-                </article>
-                <article>
-                    <button><a href="search_pet.html">Бүх зарыг үзэх</a></button>
-                </article>
-            </section>
-            <ul>
-                <button>&nbsp;</button>
-                <button>&nbsp;</button>
-                <button>&nbsp;</button>
-                <button>&nbsp;</button>
-            </ul>
+        <h3>ХАЙЖ БАЙНА</h3>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="assets/lpet1.png" alt="Image 1">
+                    <div>
+                        <p>3 хоногийн өмнө  </p>
+                        <p>Мэдээлэл</p>
+                        <button class="call-icon"><img class="call-icon" src="assets/call.png" alt="call"></button>
+                    </div>                   
+                </div>
+                <div class="slide">
+                    <img src="assets/lpet2.png" alt="Image 1">
+                    <div>
+                        <p>3 хоногийн өмнө  </p>
+                        <p>Мэдээлэл</p>
+                        <button class="call-icon"><img class="call-icon" src="assets/call.png" alt="call"></button>
+                    </div>                   
+                </div>
+                <div class="slide">
+                    <img src="assets/lpet3.png" alt="Image 1">
+                    <div>
+                        <p>3 хоногийн өмнө  </p>
+                        <p>Мэдээлэл</p>
+                        <button class="call-icon"><img class="call-icon" src="assets/call.png" alt="call"></button>
+                    </div>                   
+                </div>
+                <div class="slide">
+                    <img src="assets/lpet4.png" alt="Image 1">
+                    <div>
+                        <p>3 хоногийн өмнө  </p>
+                        <p>Мэдээлэл</p>
+                        <button class="call-icon"><img class="call-icon" src="assets/call.png" alt="call"></button>
+                    </div>                   
+                </div>
+            </div>
+            <button id="prevBtn"> < </button>
+            <button id="nextBtn"> > </button>
         </div>
-        <section>
-            <h2><a href="adopt_found_pet.html">НАМАЙГ АВААРАЙ</a></h2>
-            <section>
-                <article><img src="assets/lpet1.png" alt="lpet1">
-                    <p>3 хоногийн өмнө</p>
-                    <button><a href="info_found">МИНИЙХ!</a></button>
-                </article>
-                <article><img src="assets/lpet2.png" alt="lpet1">
-                    <p>3 хоногийн өмнө</p>
-                    <button><a href="info_adopt">ҮРЧЛЬЕ!</a></button>
-                </article>
-                <article><img src="assets/lpet3.png" alt="lpet1">
-                    <p>3 хоногийн өмнө</p>
-                    <button><a href="info_found">МИНИЙХ!</a></button>
-                </article>
-                <article><img src="assets/lpet4.png" alt="lpet1">
-                    <p>3 хоногийн өмнө</p>
-                    <button><a href="info_adopt">ҮРЧЛЬЕ!</a></button>
-                </article>
-                <article><img src="assets/lpet1.png" alt="lpet1">
-                    <p>3 хоногийн өмнө</p>
-                    <button><a href="info_found">МИНИЙХ!</a></button>
-                    </artiScle>
-                    <article><img src="assets/lpet2.png" alt="lpet1">
-                        <p>3 хоногийн өмнө</p>
-                        <button><a href="info_adopt">ҮРЧЛЬЕ!</a></button>
-                    </article>
-                    <article><img src="assets/lpet3.png" alt="lpet1">
-                        <p>3 хоногийн өмнө</p>
-                        <button><a href="info_found">МИНИЙХ!</a></button>
-                    </article>
-                    <article>
-                        <button><a href="adopt_found_pet.html">Бүх зарыг үзэх</a></button>
-                    </article>
-            </section>
-            <ul>
-                <button>&nbsp;</button>
-                <button>&nbsp;</button>
-                <button>&nbsp;</button>
-                <button>&nbsp;</button>
-            </ul>
+        <h3>НАМАЙГ АВААРАЙ</h3>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="assets/lpet4.png" alt="Image 1">
+                    <div>
+                        <p>3 хоногийн өмнө  </p>
+                        <p>Мэдээлэл</p>
+                        <button class="call-icon"><img class="call-icon" src="assets/call.png" alt="call"></button>
+                    </div>                   
+                </div>
+                <div class="slide">
+                    <img src="assets/lpet3.png" alt="Image 1">
+                    <div>
+                        <p>3 хоногийн өмнө  </p>
+                        <p>Мэдээлэл</p>
+                        <button class="call-icon"><img class="call-icon" src="assets/call.png" alt="call"></button>
+                    </div>                   
+                </div>
+                <div class="slide">
+                    <img src="assets/lpet2.png" alt="Image 1">
+                    <div>
+                        <p>3 хоногийн өмнө  </p>
+                        <p>Мэдээлэл</p>
+                        <button class="call-icon"><img class="call-icon" src="assets/call.png" alt="call"></button>
+                    </div>                   
+                </div>
+                <div class="slide">
+                    <img src="assets/lpet1.png" alt="Image 1">
+                    <div>
+                        <p>3 хоногийн өмнө  </p>
+                        <p>Мэдээлэл</p>
+                        <button class="call-icon"><img class="call-icon" src="assets/call.png" alt="call"></button>
+                    </div>                   
+                </div>
+            </div>
+            <button id="prevBtn"> < </button>
+            <button id="nextBtn"> > </button>
+        </div>
+
+        <section class="user-comment">
+            <article>
+                <button><img src="assets/user_pic1.png" alt="user_pic"></button>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, to</p>
+                <p>Username</p>
+            </article>
+            <article>
+                <button><img src="assets/user_pic1.png" alt="user_pic"></button>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, to</p>
+                <p>Username</p>
+            </article>
+            <article>
+                <button><img src="assets/user_pic1.png" alt="user_pic"></button>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, to</p>
+                <p>Username</p>
+            </article>
+            <button id="prevBtn"> < </button>
+            <button id="nextBtn"> > </button>
         </section>
-        <section>
-            <article>
-                <button><img src="assets/user_pic1.png" alt="user_pic"></button>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, to</p>
-                <p>Username</p>
-            </article>
-            <article>
-                <button><img src="assets/user_pic1.png" alt="user_pic"></button>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, to</p>
-                <p>Username</p>
-            </article>
-            <article>
-                <button><img src="assets/user_pic1.png" alt="user_pic"></button>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, to</p>
-                <p>Username</p>
-            </article>
-            <button>L</button>
-            <button>R</button>
-        </section>
+    </main>
         <footer>
             <section>
                 <h3>HappiPawz гэж юу вэ?</h3>
@@ -188,17 +196,18 @@
                 <address>Хаяг: doloremque laudantium, to</address>
                 <p>Холбоо барих: 9999-9999</p>
                 <ul>
-                    <li><a href="fb_address_here">Facebook</a></li>
+           <!--           <li><a href="fb_address_here">Facebook</a></li>
                     <li><a href="ig_address_here">Instagram</a></li>
                     <li><a href="youtube_address_here">YouTube</a></li>
-                </ul>
+                </ul> -->
             </section>
 
-            <p>Use of this service, website, or application constitutes acceptance of all terms listed above. © 2022,
+          <!-- <p>Use of this service, website, or application constitutes acceptance of all terms listed above. © 2022,
                 HappiPawz Inc. All rights reserved.</p>
             <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+     -->  
         </footer>
-    </main>
+  
     <link rel="stylesheet" href="script.js">
 </body>
 
