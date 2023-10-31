@@ -1,3 +1,12 @@
+:root{
+    --color-biege-1: #da9f72;
+    --color-biege-2: #da9f72;
+    --color-biege-3: #da9f72;
+    --color-biege-4: #da9f72;
+    --raindrop-color-bg:var(--color-biege-1);
+    --raindrop-color-text:var(--color-black-1);
+    }
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +14,39 @@ body {
     background-size: cover;
     font-family: 'Nunito', sans-serif;
     color: #251B13;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+main {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  margin: 0;
+  min-height: 100vh; /* Ensure it takes up at least the full viewport height */
+}
+@media screen and (max-width: 768px) {
+    nav .menu-button {
+      display: block;
+      margin-left: auto;
+      cursor: pointer;
+    }
+  
+    nav .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    /* ... (existing styles for mobile navigation) */
+  }
+  
 
 nav {
     background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for the blur effect */
@@ -15,8 +56,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: fixed; /* Fixed position to stay at the top while scrolling */
-    width: 100%; /* Take up the full width of the viewport */
+    /* Take up the full width of the viewport */
     top: 0; /* Stick to the top */
+    left: 0;
+    right: 0;
     z-index: 1000; /* Ensure it appears above other content */
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -62,7 +105,7 @@ nav ul {
     justify-content: center;
 }
 
-/* Adjust the spacing of the navigation links */
+
 nav ul li:last-child {
     margin-right: 0;
 }
@@ -70,20 +113,18 @@ nav img {
     margin-left: 40px;
 }
 
-/* Create space at the top of the content to avoid it being hidden behind the fixed navigation */
+
 body {
-    padding-top: 150px; /* Set to the height of the fixed navigation */
+    padding-top: 150px; 
 }
-main {
-    width: 60%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the element horizontally */
-}
+
 .poster {
-    margin-left: 5%;
-    margin-right: 5%;
     display: flex;
-    justify-content: space-between;
+    flex-flow: row wrap; /* Stack elements vertically */  
+    justify-content: center;
+    margin-bottom: 50px;
 }
+
 main div section h1 {
     font-size: 50px;
     width: 350px;
@@ -92,6 +133,7 @@ main div section h1 {
     margin: 0;
     line-height: 1;
 }
+
 .duudlaga-button {
   margin:  30px 0 30px 0;
   background-color: #F1C439;
@@ -101,6 +143,7 @@ main div section h1 {
   height: 80px;
 
 }
+
 .duudlaga-button a{
   text-decoration: none;
   font-size: 25px;
@@ -108,6 +151,7 @@ main div section h1 {
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
+
 .duudlaga-button i{
     text-decoration: none;
     font-size: 25px;
@@ -120,20 +164,45 @@ main div section h1 {
 }
 .tbuttons button {
     margin-inline: 7px;
-    background-color: ##fff2f0;
+    background-color: #fff2f0;
     border-color: #fa8575;
     border-radius: 10px;
     width: 120px;
     height: 80px;
 }
 
+/*3n icon*/
+
+.tbuttons button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #fa8575;
+    background: #FBF6F2;
+    cursor: pointer;
+    padding: 10px;
+    height: 110px;
+    overflow: hidden; 
+}
+
+.tbuttons .icon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
 .tbuttons button a {
     text-decoration: none;
     font-size: 15px;
-    font-weight: 500; 
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     color: #fa8575;
+    text-align: center;
 }
+
+
 
 /*searching section*/
 .searching {
@@ -142,50 +211,316 @@ main div section h1 {
     display: flex;
     flex: auto;
     justify-content: center;
-}
-.searching h2 {
-    width: 1000px;
-    height: 50px;
-    align-items: center;
-    background-color: #FFF5D4;
-    justify-content: center;
-    color: #F1C439;
+
+    & h2 {
+        width: 1000px;
+        height: 50px;
+        align-items: center;
+        background-color: #FFF5D4;
+        color: #F1C439;
+        & a {
+            align-self: center;
+            width: 100%;
+            height: 100%;
+            color: #F1C439;
+        }
+    }
 }
 
-.searching h2 a {
-    align-self: center;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    color: #F1C439;
-}
 .searching section {
     align-items: center;
     display:inline-flex;
 }
-.szar {
-    width: 280px;
-    height: 55  0px;
-    align-items: center;
-    border: 20px;
-    border-radius: 10px;
-    border-color: gray;
+
+main .poster section .duudlaga-button img {
+    position: relative;
+    top: 6px;
+    width: 31px;
+    padding: 0;
+    margin: 0;
 }
-.szar button {
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    border: none;
-    border-radius: 20px;
+
+/*background animation*/
+
+.raindrop,.raindrop-1,.raindrop-2,.raindrop-3{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 0.3;
+    animation: fall 0.5s linear infinite, drift 10s linear infinite;
+    border-radius: 10%;
 }
-.szar button :hover{
-    width: 40px;
-    height: 40px;
+.raindrop {
+    background-color: var(--raindrop-color-bg); 
+}
+.raindrop-1 {
+    background-color: #da7295;
+    top: 600px;
+}
+.raindrop-2 {
+    background-color: #da9f72;
+    top: 700px;
+    right: 50px;
+}
+.raindrop-3 {
+    background-color: #da9f72;
+    top: 250px;
+    right:50px;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(calc(90vh + 50px));
+    }
+}
+
+@keyframes drift {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    75% {
+        transform: translateX(20px);
+    }
+}
+
+section{
+    justify-content: center;
+}
+
+/* Styles for larger screens */
+.poster {
+    display: flex;
+    align-items: center;
+  }
+ 
+  /* Media query for mobile screens */
+  @media screen and (max-width: 768px) {
+
+  
+    .poster section {
+      text-align: center; /* Center-align text */
+    }
+  
+    .poster img {
+      order: 1; /* Move the image below the section */
+      max-width: 200%; /* Ensure the image stays within the container */
+    }
+  
+    h1 {
+      font-size: 20px; /* Adjust the font size as needed */
+    }
+    .duudlaga-button{
+        width: 350px;
+    }
+    .tbuttons{
+        width: 350px;
+    }
+
+  }
+
+
+  nav .menu-button {
+    display: none; /* Hide the burger menu button */
+  }
+  
+  nav .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav .nav-links li {
+    margin-right: 20px;
+  }
+
+  /* Media query for mobile screens */
+  @media screen and (max-width: 768px) {
+    nav .menu-button {
+      display: block; /* Show the burger menu button */
+      margin-left: auto;
+      cursor: pointer;
+    }
+  
+    nav .nav-links {
+      display: none; /* Hide the navigation links */
+      flex-direction: column;
+      background-color: #333; /* Background color for the mobile menu */
+      position: absolute;
+      top: 60px; /* Adjust this value as needed to position the menu below the navigation bar */
+      left: 0;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    nav .nav-links li {
+      margin: 10px 0;
+    }
+  
+    nav.open .nav-links {
+      display: flex; /* Show the navigation links when the menu is open */
+    }
+  }
+  /* haij bn heseg*/
+   .slider-container {
+
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    & button{
+        border: none ;
+        border-radius: 50%;
+
+    }
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    box-sizing: border-box;
+    border: solid 1px #c3bfbf;
+    border-radius: 15px;
+    padding: z;
+    margin: 15px;
+    width: 250px;
+
+    & p{
+        font-size: 18px;
+        padding: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0;
+    }
+    
+}
+.slide img {
+    max-width: 100%;
+    margin-top: 5px;
+    height: auto;
+}
+button {
+    margin-top: 10px;
+}
+.call-icon{
+    width: 50px;
     border: none;
+}
+
+
+/* footer */
+footer {
     background-color: #251B13;
-    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 120px;
 }
-.szar button img {
-    width: 30px;
-    height: 30px;
+
+footer section {
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
 }
+
+footer section h3 {
+    margin-top: 0;
+}
+
+footer section ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer section ul li {
+    margin: 10px 0;
+}
+
+footer p {
+    text-align: center;
+    clear: both;
+    margin: 20px 0;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/*sanal setgegdl */
+/* Style the user comment section */
+.user-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style each user comment article */
+  .user-comment article {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    max-width: 600px; /* Set a max width for the articles container */
+  }
+  
+  /* Style the user profile picture button */
+  .user-comment button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-comment button img {
+    width: 80px; /* Adjust the width to your preference */
+    height: 80px; /* Adjust the height to your preference */
+    border-radius: 50%; /* Round the profile picture */
+  }
+  
+  /* Style the user comment text */
+  .user-comment p {
+    margin: 0 10px; /* Add space around the text */
+    word-wrap: break-word; /* Wrap long text */
+  }
+  
+  /* Style the username */
+  .user-comment p:last-child {
+    font-weight: bold;
+    color: #007BFF; /* Customize the username color */
+  }
+  
+  /* Style the navigation buttons */
+  .user-comment #prevBtn,
+  .user-comment #nextBtn {
+    background: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .user-comment #prevBtn:hover,
+  .user-comment #nextBtn:hover {
+    background: #0056b3; /* Change color on hover */
+  }
+  
+
+
+   
+
+ 
