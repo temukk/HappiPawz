@@ -1,8 +1,8 @@
 /* styles-signup.css */
 :root {
     --main-color: #fa8575;
-    --button-color: #F1C439; /* Yellow button color */
-    --input-opacity: 0.4; /* Adjust the opacity value as needed */
+    --button-color: #F1C439;
+    --input-opacity: 0.4;
 }
 
 * {
@@ -21,16 +21,16 @@ section {
 
 .column {
     display: inline-block;
-    width: 45%; /* Adjust the width as needed */
+    width: 45%;
     vertical-align: middle;
 }
 
 section img {
     position: relative;
-    top: -16%;
-    left: 30%;
-    width: 80px; /* Adjust the width as needed */
-    height: 65px; /* Adjust the height as needed */
+    top: -19%;
+    left: 35%;
+    width: 80px;
+    height: 65px;
 }
 
 section form {
@@ -68,7 +68,7 @@ section form a {
     text-decoration: underline;
     margin: 10px 0;
     font-size: 14px;
-    left: 180px;
+    left: 250px;
 }
 
 /* Set button background color to yellow and make text bold */

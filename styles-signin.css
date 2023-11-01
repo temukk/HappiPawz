@@ -24,10 +24,10 @@
 
 .sign-in-image {
     position: relative;
-    top: -13%;
+    top: -15%;
     left: 65%;
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
+    width: 100px;
+    height: 100px;
 }
 
 .signin {
@@ -50,7 +50,7 @@
     width: 100%;
     padding: 10px;
     margin-top: 25px;
-    border: 1px solid var(--button-color); /* Change to --button-color for the border color */
+    border: 1px solid var(--button-color);
     border-radius: 15px;
     background-color: rgba(241, 196, 57, var(--input-opacity));
 }
@@ -74,7 +74,7 @@
     margin: 10px 0;
     border-radius: 15px;
     cursor: pointer;
-    font-weight: bold; /* Make button text bold */
+    font-weight: bold;
 }
 
 .reg {
@@ -82,7 +82,7 @@
     position: relative;
     left: 25px;
     background-color: #fff;
-    border: 3px solid var(--button-color); /* Change to --button-color for the border color */
+    border: 3px solid var(--button-color);
     padding: 10px 20px;
     margin: 10px 0;
     border-radius: 15px;

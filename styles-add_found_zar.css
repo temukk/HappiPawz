@@ -1,0 +1,143 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    color: #251B13;
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header and navigation */
+nav {
+    color: #DB5947;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #DB5947;
+}
+
+/* Style the section with the form */
+
+.box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    vertical-align: center;
+    justify-content: center;
+    border: 10px;
+    background-color: #fdbab1;
+    border-radius: 20px;
+}
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Style the form elements */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #DB5947;
+    border-radius: 5px;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the gender labels and radio buttons */
+label[for="gender"],
+input[type="radio"] {
+    margin-right: 10px; /* Adjust the margin to control spacing */
+}
+
+input[type="file"] {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #DB5947;
+    color: white;
+    padding: 10px 20px;
+    border: 1px;
+    border-color: #DB5947;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Style the footer */
+footer {
+    background-color: #251B13;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Copyright and privacy links */
+footer p {
+    font-size: 12px;
+    margin: 0;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Horizontal line */
+hr {
+    border: none;
+    border-top: 1px solid #FFA500; /* Orange */
+}
