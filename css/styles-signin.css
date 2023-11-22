@@ -1,8 +1,8 @@
-/* styles-signin.css */
+/* styles-signup.css */
 :root {
     --main-color: #fa8575;
-    --button-color: #F1C439; /* Yellow button color */
-    --input-opacity: 0.4; /* Adjust the opacity value as needed */
+    --button-color: #F1C439;
+    --input-opacity: 0.4;
 }
 
 * {
@@ -11,27 +11,29 @@
     color: #251B13;
 }
 
-.signin-container {
-    position: relative;
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 80vh;
-}
-
-.sign-in-image {
-    position: relative;
-    top: -15%;
-    left: 65%;
-    width: 100px;
-    height: 100px;
-}
-
-.signin {
+section {
     width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+}
+
+section img {
+    position: relative;
+    top: -19%;
+    left: 35%;
+    width: 80px;
+    height: 65px;
+}
+
+section form {
     background-color: #fff;
     border: 5px solid var(--main-color);
     padding: 20px;
@@ -39,57 +41,51 @@
     border-radius: 15px;
 }
 
-.signin h4 {
-    color: black;
+section form h4 {
+    color: var(--main-color);
     font-size: 24px;
     margin-bottom: 5px;
 }
 
-.signin input[type="text"],
-.signin input[type="password"] {
+section form input[type="text"],
+section form input[type="email"],
+section form input[type="Нэр"],
+section form input[type="text"],
+section form input[type="password"],
+section form input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin-top: 25px;
-    border: 1px solid var(--button-color);
+    margin: 5px;
+    border: none;
     border-radius: 15px;
     background-color: rgba(241, 196, 57, var(--input-opacity));
+    display: block; /* Make inputs display as block elements */
 }
 
-.forget {
+section form a {
     position: relative;
     color: black;
     text-decoration: underline;
-    left: 110px;
+    margin: 10px 0;
+    font-size: 14px;
+    left: 250px;
 }
 
 /* Set button background color to yellow and make text bold */
-.sub {
+section form button {
     width: 200px;
     position: relative;
-    left: 25px;
+    left: 30%;
     background-color: var(--button-color);
-    color: #fff;
     border: none;
     padding: 10px 20px;
     margin: 10px 0;
     border-radius: 15px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: bold; /* Make button text bold */
 }
 
-.reg {
-    width: 200px;
-    position: relative;
-    left: 25px;
-    background-color: #fff;
-    border: 3px solid var(--button-color);
-    padding: 10px 20px;
-    margin: 10px 0;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.signin button a {
+section form button a {
     text-decoration: none;
     color: black;
 }
