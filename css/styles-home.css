@@ -18,6 +18,34 @@ body {
     align-items: center;
     height: 100vh;
 }
+.miniih{
+    margin: 0;
+    padding: 15px;
+    background-color: #F1C439;
+    border: 0;
+    border-radius: 15px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+}
+
+.more{
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 200px;
+    border: solid 2px #DB5947;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+}
+.more a{
+    color:#DB5947;
+    text-decoration: none;
+}
 main {
   display: flex;
   flex-direction: column; /* Stack items vertically */
@@ -373,7 +401,7 @@ section{
     position: relative;
     & button{
         border: none ;
-        border-radius: 50%;
+       
 
     }
 }
