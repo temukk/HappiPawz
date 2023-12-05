@@ -4,7 +4,7 @@ document.querySelector('.menu-button').addEventListener('click', function() {
   });
 
   
-  const slider = document.querySelector(".slider");
+const slider = document.querySelector(".slider");
 const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
 
